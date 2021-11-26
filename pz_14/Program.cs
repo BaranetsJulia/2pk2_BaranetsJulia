@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 
 namespace pz_14
 {
@@ -7,8 +8,9 @@ namespace pz_14
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\us\Desktop\12345.txt";
-            string outputPath = @"C:\Users\us\Desktop\123456.txt";
+            //Вариант 3
+            string path = @"C:\Users\User\Desktop\12345.txt";
+            string outputPath = @"C:\Users\User\Desktop\123456.txt";
             FileStream file = new FileStream(path, FileMode.Open, FileAccess.ReadWrite);
             StreamReader reader = new StreamReader(file);
             string str = reader.ReadToEnd();
